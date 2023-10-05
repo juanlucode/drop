@@ -4,7 +4,17 @@ import com.badlogic.gdx.Game;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
-public class Drop extends Game {
+/**
+ The Game class is responsible for handling multiple screens and provides
+ some helper methods for this purpose, alongside an implementation of
+ ApplicationListener for you to use. Together, Screen and Game objects are
+ used to create a simple and powerful structure for games.
+
+ We will start by creating a Drop class, which extends Game and whose create()
+ method will be the entry point to our game. Let’s take a look at some code:
+ */
+
+public class DropGame extends Game {
     public SpriteBatch batch;
     public BitmapFont font;
 

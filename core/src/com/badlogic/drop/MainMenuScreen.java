@@ -7,10 +7,10 @@ import com.badlogic.gdx.utils.ScreenUtils;
 
 public class MainMenuScreen implements Screen {
 
-    final Drop game;
+    final DropGame game;
     OrthographicCamera camera;
 
-    public MainMenuScreen(final Drop game){
+    public MainMenuScreen(final DropGame game){
         this.game = game;
 
         camera = new OrthographicCamera();
@@ -30,7 +30,7 @@ public class MainMenuScreen implements Screen {
         game.batch.setProjectionMatrix(camera.combined);
 
         game.batch.begin();
-        game.font.draw(game.batch, "Welcome to Drop!!!", 100, 150);
+        game.font.draw(game.batch, "Welcome to DropGame!!!", 100, 150);
         game.font.draw(game.batch, "Tap anywhere to begin!", 100, 100);
         game.batch.end();
 

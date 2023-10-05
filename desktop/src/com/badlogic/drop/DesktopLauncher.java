@@ -9,6 +9,6 @@ public class DesktopLauncher {
 		Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
 		config.setForegroundFPS(60);
 		config.setTitle("drop");
-		new Lwjgl3Application(new Drop(), config);
+		new Lwjgl3Application(new DropGame(), config);
 	}
 }

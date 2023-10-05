@@ -7,7 +7,6 @@ import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector3;
@@ -19,7 +18,7 @@ import java.util.Iterator;
 
 
 public class GameScreen implements Screen {
-	final Drop game;
+	final DropGame game;
 
 	private Texture dropImage;
 	private Texture bucketImage;
@@ -35,7 +34,7 @@ public class GameScreen implements Screen {
 	private long lastDropTime;
 
 	private int dropsGathered;
-	public GameScreen(final Drop game) {
+	public GameScreen(final DropGame game) {
 		this.game = game;
 
 		// load the images for the droplet and the bucket, 64x64 pixels each
